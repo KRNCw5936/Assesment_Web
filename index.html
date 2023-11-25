@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-kFMa/ZlN1TF5cbOI2BoTtNWuc/3oZfrOU3Phc5L8Upw0j6v5ai5YAvrOaM42+2N5IzjFtDUNMyiWcsW88DJwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: aliceblue;">
+    <nav class="navbar bg-body-tertiary"
+        style="background-color: rgb(82, 197, 232); color: rgb(255, 255, 255); position: fixed; width: 100%; z-index: 3;">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">STARBHAK MARKET</span>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="card" style="width: 22rem; float: left; border: none; background-color: aliceblue;">
+        <div class="card" style="width: 20rem; margin-right: 2%;">
+            <div class="card-body">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="width: 100%; background-color: rgb(82, 197, 232);"
+                        id="dropdownButton">
+                        <a>Pilih Metode pembelian</a>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="changeText('Dine In')">Dine In</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeText('COD')">COD</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeText('Take Away')">Take Away</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-primary" style="width: 100%; background-color: rgb(82, 197, 232);">
+                    <img src="assets/koki_png-removebg-preview.png" style="width: 50px; height: 40px; padding-right: 4px;"
+                        alt="">Bang Adrian</button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 20rem; height: 30rem; margin-right: 2%; overflow: scroll;">
+            <div class="card-body">
+                <div class="card" id="dis1">
+                    <div id="displayInfo"></div>
+                    <div id="displayValue"></div>
+                    <div>Quantity : <span id="quantity">1</span></div>
+                    <button id="rem1" class="btn btn-danger">Hapus Pesanan</button>
+                </div>
+                <br>
+                <div class="card" id="dis2">
+                    <div id="displayInfo2"></div>
+                    <div id="displayValue2"></div>
+                    <div>Quantity : <span id="quantity2">1</span></div>
+                    <button id="rem2" class="btn btn-danger">Hapus Pesanan</button>
+                </div>
+                <br>
+                <div class="card" id="dis3">
+                    <div id="displayInfo3"></div>
+                    <div id="displayValue3"></div>
+                    <div>Quantity : <span id="quantity3">1</span></div>
+                    <button id="rem3" class="btn btn-danger">Hapus Pesanan</button>
+                </div>
+                <br>
+                <div class="card" id="dis4">
+                  <div id="displayInfo4"></div>
+                  <div id="displayValue4"></div>
+                  <div>Quantity : <span id="quantity4">1</span></div>
+                  <button id="rem4" class="btn btn-danger">Hapus Pesanan</button>
+                </div>
+                <br>
+                <div class="card" id="dis5">
+                  <div id="displayInfo5"></div>
+                  <div id="displayValue5"></div>
+                  <div>Quantity : <span id="quantity5">1</span></div>
+                  <button id="rem5" class="btn btn-danger">Hapus Pesanan</button>
+                </div>
+                <br>
+                <div class="card" id="dis6">
+                  <div id="displayInfo6"></div>
+                  <div id="displayValue6"></div>
+                  <div>Quantity : <span id="quantity6">1</span></div>
+                  <button id="rem6" class="btn btn-danger">Hapus Pesanan Anda</button>
+                </div>
+                <br>
+                <div class="card" id="dis7">
+                  <div id="displayInfo7"></div>
+                  <div id="displayValue7"></div>
+                  <div>Quantity : <span id="quantity7">1</span></div>
+                  <button id="rem7" class="btn btn-danger">Hapus Pesanan Anda</button>
+                </div>
+                <br>
+                <div class="card" id="dis8">
+                  <div id="displayInfo8"></div>
+                  <div id="displayValue8"></div>
+                  <div>Quantity : <span id="quantity8">1</span></div>
+                  <button id="rem8" class="btn btn-danger">Hapus Pesanan</button>
+                </div>
+                <br>
+                <div class="card" id="dis9">
+                  <div id="displayInfo9"></div>
+                  <div id="displayValue9"></div>
+                  <div>Quantity : <span id="quantity9">1</span></div>
+                  <button id="rem9" class="btn btn-danger">Hapus Pesanan</button>
+                </div>
+                <br>
+                <div class="card" id="dis10">
+                  <div id="displayInfo10"></div>
+                  <div id="displayValue10"></div>
+                  <div>Quantity : <span id="quantity10">1</span></div>
+                  <button id="rem10" class="btn btn-danger">Hapus Pesanan</button>
+                </div>
+                <br>
+                <div class="card" id="dis11">
+                  <div id="displayInfo11"></div>
+                  <div id="displayValue11"></div>
+                  <div>Quantity : <span id="quantity11">1</span></div>
+                  <button id="rem11" class="btn btn-danger">Hapus Pesanan Anda</button>
+                </div>
+                <br>
+                <div class="card" id="dis12">
+                  <div id="displayInfo12"></div>
+                  <div id="displayValue12"></div>
+                  <div>Quantity : <span id="quantity12">1</span></div>
+                  <button id="rem12" class="btn btn-danger">Hapus Pesanan Anda</button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-warning" style="width: 20rem; height: rem; margin-right: 2%;">
+            <div class="card-body">
+                <span>Tax : 10%</span>
+                <br>
+                <b>Total Amount : Rp <span id="tax"></span></b>
+                <br>
+                <br>
+                <!-- Tambahkan tombol Hapus Semua Pesanan -->
+                <button id="clearAllOrders" class="btn btn-danger" onclick="clearAllOrders()" style="margin-top: 10px;">Hapus Semua Pesanan</button>
+                <button id="exportToTxt" class="btn btn-primary" onclick="exportToTxt()" style="position: fixed; bottom: 10px; right: 10px; background-color: rgb(255, 174, 0); z-index: 4;">
+                  Approval &<br>
+                  Print Recipe
+                </button>  
+
+                <div id="successCard">
+                  Barang Disetujukan dan Terjual
+                </div>
+
+                <div id="noItemSelectedMessage" style="display: none; position: fixed; bottom: 30px; right: 10px; color: red; font-weight: bold; z-index: 5;">
+                  Tidak Ada Barang Yang Dipilih, Silahkan Pilih Barang!
+                </div>
+                
+                <a id="downloadTxtLink" style="display:none;"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="color: black;">List Makanan</a>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" id="myInput" onkeyup="myFunction()" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <br>
+
+    <div id="myUl" class="card-container">
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+        <img src="assets/EggSandwich.jpg"
+            class="card-img-top" alt="Clickable Image">
+        <div class="card-body">
+            <p class="card-text" id="infoItm">Egg Sandwich</p>
+            <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga">15000</span></h5>
+            <button class="btn btn-success add-btn" style="float: left;" id="clickableImage">Add</button>
+        </div>
+    </div>
+
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+        <img src="assets/French Fries.jpg" class="card-img-top" alt="Clickable Image">
+        <div class="card-body">
+            <p class="card-text" id="infoItm2">French Fries</p>
+            <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga2">5000</span></h5>
+            <button class="btn btn-success add-btn" style="float: left;" id="clickableImage2">Add</button>
+        </div>
+    </div>
+
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+      <img src="assets/Burger.jpg"
+          class="card-img-top" alt="Clickable Image">
+      <div class="card-body">
+          <p class="card-text" id="infoItm3">Burger</p>
+          <h5 class="card-title" style="float: left; margin-right: 40%;">
+              Rp.<span id="harga3">15000</span>
+          </h5>
+          <button class="btn btn-success add-btn" style="float: left;" id="clickableImage3">Add</button>
+      </div>
+    </div>
+
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+      <img src="assets/Taco.jpg" class="card-img-top" alt="Clickable Image">
+      <div class="card-body">
+          <p class="card-text" id="infoItm4">Taco</p>
+          <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga4">15000</span></h5>
+          <button class="btn btn-success add-btn" style="float: left;" id="clickableImage4">Add</button>
+      </div>
+    </div>
+      
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+      <img src="assets/Pita.jpg" class="card-img-top" alt="Clickable Image">
+      <div class="card-body">
+          <p class="card-text" id="infoItm5">Pita</p>
+          <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga5">20000</span></h5>
+          <button class="btn btn-success add-btn" style="float: left;" id="clickableImage5">Add</button>
+      </div>
+    </div>
+
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+      <img src="assets/Hotdog.jpeg" class="card-img-top" alt="Clickable Image">
+      <div class="card-body">
+          <p class="card-text" id="infoItm6">Hot Dog</p>
+          <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga6">10000</span></h5>
+          <button class="btn btn-success add-btn" style="float: left;" id="clickableImage6">Add</button>
+      </div>
+    </div>
+      
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+      <img src="assets/Es Teh.jpg" class="card-img-top" alt="Clickable Image">
+      <div class="card-body">
+          <p class="card-text" id="infoItm7">Ice Tea</p>
+          <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga7">3000</span></h5>
+          <button class="btn btn-success add-btn" style="float: left;" id="clickableImage7">Add</button>
+      </div>
+    </div>
+
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+      <img src="assets/Orange Juice.jpeg" class="card-img-top" alt="Clickable Image">
+      <div class="card-body">
+          <p class="card-text" id="infoItm8">Orange Juice</p>
+          <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga8">8000</span></h5>
+          <button class="btn btn-success add-btn" style="float: left;" id="clickableImage8">Add</button>
+      </div>
+    </div>
+    
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+      <img src="assets/Jus Mangga.jpg" class="card-img-top" alt="Clickable Image">
+      <div class="card-body">
+          <p class="card-text" id="infoItm9">Mango Juice</p>
+          <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga9">8000</span></h5>
+          <button class="btn btn-success add-btn" style="float: left;" id="clickableImage9">Add</button>
+      </div>
+    </div>
+
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+      <img src="assets/Thai Tea.jpeg" class="card-img-top" alt="Clickable Image">
+      <div class="card-body">
+          <p class="card-text" id="infoItm10">Thai Tea</p>
+          <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga10">9000</span></h5>
+          <button class="btn btn-success add-btn" style="float: left;" id="clickableImage10">Add</button>
+      </div>
+    </div>
+    
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+      <img src="assets/Boba Milk.jpeg" class="card-img-top" alt="Clickable Image">
+      <div class="card-body">
+          <p class="card-text" id="infoItm11">Boba Milk</p>
+          <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga11">10000</span></h5>
+          <button class="btn btn-success add-btn" style="float: left;" id="clickableImage11">Add</button>
+      </div>
+    </div>
+
+    <div class="card card-food" style="width: 10rem; margin-right: 1%; margin-top: 1%; display: inline-block;">
+      <img src="assets/Golden Milk.jpeg" class="card-img-top" alt="Clickable Image">
+      <div class="card-body">
+          <p class="card-text" id="infoItm12">Golden Milk</p>
+          <h5 class="card-title" style="float: left; margin-right: 40%;">Rp.<span id="harga12">11000</span></h5>
+          <button class="btn btn-success add-btn" style="float: left;" id="clickableImage12">Add</button>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="main.js"></script>
+  </div>
+</body>
+</html>
